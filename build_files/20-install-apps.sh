@@ -41,8 +41,8 @@ if [[ "$IMAGE_NAME" == *gnome* ]]; then
         sddm
 
     systemctl enable gdm.service
-else
-    # Re-enable logout and switch user functionality in KDE
+# else
+#     # Re-enable logout and switch user functionality in KDE
 #     sed -i -E \
 #       -e 's/^(action\/switch_user)=false/\1=true/' \
 #       -e 's/^(action\/start_new_session)=false/\1=true/' \
